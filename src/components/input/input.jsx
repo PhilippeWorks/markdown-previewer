@@ -1,9 +1,12 @@
-import React, { Component } from 'react';
+import React from 'react';
+import './UserInput.css';
 
-import './input.css';
-
-class Input extends React {
-	render () {
-		return ()
-	}
+function Input(props) {
+	return (
+		<div className="UserInput">
+			<input type="text" onChange={props.updateMarkdown} value={props.value} />
+		</div>
+		)
 }
+
+export default Input;
