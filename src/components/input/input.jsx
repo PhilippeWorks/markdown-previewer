@@ -1,10 +1,12 @@
 import React from 'react';
-import './UserInput.css';
 
 function Input(props) {
 	return (
-		<div className="UserInput">
-			<input type="text" onChange={props.updateMarkdown} value={props.value} />
+		<div className="Input">
+			<textarea 
+				type="text" 
+				onChange={props.updateMarkdown} 
+				value={props.value} />
 		</div>
 		)
 }

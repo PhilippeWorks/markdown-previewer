@@ -1,11 +1,35 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	vertical-align: top;
+}
+
+.Header {
+	padding: 3%;
+	text-align: center;
+	background-color: blue;
+	color: white;
+	font-family: monospace;
+}
+
 .Input {
 	display: inline-block;
 	width: 50%;
 	padding: 1%;
+	border: 1px solid black;
+	height: 600px;
+}
+
+.Input textarea {
+	height: 100%;
+	width: 100%;
 }
 
 .Output {
 	display: inline-block;
 	width: 50%;
 	padding: 1%;
+	border: 1px solid black;
+	height: 600px;
 }
+
