@@ -3,12 +3,9 @@ import React from 'react';
 function Input(props) {
 	return (
 		<div className="Input">
-			<textarea 
-				type="text" 
-				onChange={props.updateMarkdown} 
-				value={props.value} />
+			<textarea onChange={props.updateMarkdown} defaultValue={props.inputArea} />
 		</div>
-		)
+	)
 }
 
 export default Input;

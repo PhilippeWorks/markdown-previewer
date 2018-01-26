@@ -1,36 +1,3 @@
-import React from 'react';
-
-const initialMarkdown = `Heading
-=======
-
-Sub-heading
------------
- 
-### Another deeper heading
- 
-Paragraphs are separated
-by a blank line.
-
-Leave 2 spaces at the end of a line to do a  
-line break
-
-Text attributes *italic*, **bold**, 
-\`monospace\`, ~~strikethrough~~ .
-
-Shopping list:
-
-  * apples
-  * oranges
-  * pears
-
-Numbered list:
-
-  1. apples
-  2. oranges
-  3. pears
-
-The rain---not the reign---in
-Spain.
-`
+const initialMarkdown = 'Heading\n=======\n\nSub-heading\n-----------\n \n### Another deeper heading\n \nParagraphs are separated\nby a blank line.\n\nLeave 2 spaces at the end of a line to do a  \nline break\n\nText attributes *italic*, **bold**, \n`monospace`, ~~strikethrough~~ .\n\nShopping list:\n\n  * apples\n  * oranges\n  * pears\n\nNumbered list:\n\n  1. apples\n  2. oranges\n  3. pears\n\nThe rain---not the reign---in\nSpain.\n\n *[Herman Fassett](https://freecodecamp.com/hermanfassett)*';
 
 export default initialMarkdown;

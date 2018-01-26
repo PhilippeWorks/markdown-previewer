@@ -1,29 +1,31 @@
 import React, { Component } from 'react';
-import Marked from 'marked';
+import marked from 'marked';
 
 import './App.css';
+import initialMarkdown from './assets/initialMarkdown';
 
 import Layout from './containers/Layout/Layout';
 import Input from './components/Input/Input';
 import Output from './components/Output/Output';
-import initialMarkdown from './assets/initialMarkdown';
 
 class App extends Component {
 	state = {
-		markdown: initialMarkdown,
+		markdownInput: initialMarkdown
 	}
 
 	markdownHandler = (event) => {
-
+		this.setState({markdownInput: event.target.value});
 	}
+
+	let markdownResult = marked(this.state.markdownInput, {sanitize: true, breaks: true});
 
 	render() {
 		return (
 		  <Layout>
 		    <Input 
-		    	value={this.state.markdown}
-		    	markdownUpdate={this.markdownHandler} />
-		    <Output />
+		    	inputArea={this.state.markdownInput}
+		    	updateMarkdown={this.markdownHandler} />
+		    <Output markdown={markdownResult} />
 		  </Layout>
 		);
 	}
