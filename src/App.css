@@ -4,7 +4,16 @@
 	vertical-align: top;
 }
 
-.Header {
+body {
+	height: 100vh;
+}
+
+#root {
+	height: 100%;
+}
+
+.LayoutStyles {
+	height: 12%;
 	padding: 3%;
 	text-align: center;
 	background-color: blue;
@@ -12,12 +21,16 @@
 	font-family: monospace;
 }
 
+.Jumbotron {
+	height: 76%;
+}
+
 .Input {
 	display: inline-block;
 	width: 50%;
 	padding: 1%;
 	border: 1px solid black;
-	height: 600px;
+	height: 100%;
 }
 
 .Input textarea {
@@ -30,6 +43,6 @@
 	width: 50%;
 	padding: 1%;
 	border: 1px solid black;
-	height: 600px;
+	height: 100%;
 }
 

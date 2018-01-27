@@ -17,9 +17,9 @@ class App extends Component {
 		this.setState({markdownInput: event.target.value});
 	}
 
-	let markdownResult = marked(this.state.markdownInput, {sanitize: true, breaks: true});
-
 	render() {
+		let markdownResult = marked(this.state.markdownInput, {sanitize: true, breaks: true} );
+
 		return (
 		  <Layout>
 		    <Input 
